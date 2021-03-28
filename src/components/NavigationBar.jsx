@@ -39,9 +39,18 @@ const NavigationBar = () => {
     <AppBar className={classes.appBar}>
       <Toolbar className={classes.tool}>
         <Box variant="h6" className={classes.LinksWrapper}>
-          <Link className={classes.linkItems}> Home </Link>
-          <Link className={classes.linkItems}> Career </Link>
-          <Link className={classes.linkItems}> About </Link>
+          <Link to="/home" className={classes.linkItems}>
+            {" "}
+            Home{" "}
+          </Link>
+          <Link to="/SimpleRoutePage" className={classes.linkItems}>
+            {" "}
+            Career{" "}
+          </Link>
+          <Link to="/SimpleRoutePage" className={classes.linkItems}>
+            {" "}
+            About{" "}
+          </Link>
         </Box>
         <IconButtons />
       </Toolbar>

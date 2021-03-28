@@ -14,6 +14,12 @@ const useStyles = makeStyles((theme) => ({
     bottom: "8px",
     left: "16px",
     color: color.white,
+    [theme.breakpoints.down("xs")]: {
+      position: "absolute",
+      top: "50%",
+      left: "50%",
+      transform: "translate(-50%, -50%)",
+    },
   },
 
   text3: {
@@ -28,6 +34,12 @@ const useStyles = makeStyles((theme) => ({
     bottom: "8px",
     left: "150px",
     color: color.white,
+    [theme.breakpoints.down("xs")]: {
+      position: "absolute",
+      top: "50%",
+      left: "50%",
+      transform: "translate(-50%, -50%)",
+    },
   },
 
   Test: {

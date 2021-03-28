@@ -10,7 +10,10 @@ const useStyles = makeStyles((theme) => ({
     marginBottom: "5%",
     height: "50px",
     minWidth: "300px",
-    minWidth: "300px",
+
+    [theme.breakpoints.down("sm")]: {
+      minWidth: "0px !important",
+    },
   },
 }));
 
