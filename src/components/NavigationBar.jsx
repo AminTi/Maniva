@@ -6,6 +6,7 @@ import color from "./styles/color";
 import { BrowserRouter as Router, Link } from "react-router-dom";
 import IconButtons from "./IconButtons";
 import { Box } from "@material-ui/core";
+import Button from "@material-ui/core/Button";
 
 const useStyles = makeStyles((theme) => ({
   appBar: {
@@ -31,6 +32,14 @@ const useStyles = makeStyles((theme) => ({
   LinksWrapper: {
     margin: "0 auto",
   },
+  Parterns: {
+    color: color.black,
+    backgroundColor: color.Senapyellow,
+    fontWeight: "bold",
+    [theme.breakpoints.down("xs")]: {
+      display: "none",
+    },
+  },
 }));
 
 const NavigationBar = () => {
@@ -52,6 +61,7 @@ const NavigationBar = () => {
             About{" "}
           </Link>
         </Box>
+        <Button className={classes.Parterns}>Parterns</Button>
         <IconButtons />
       </Toolbar>
     </AppBar>
