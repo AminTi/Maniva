@@ -1,8 +1,8 @@
-import React from "react";
 import "./App.css";
-import HomePage from "./pages/HomePage";
+
 import { Switch, Route } from "react-router-dom";
-import SimplePage from "./pages/SImplePage";
+import HomePage from "./components/pages/HomePage";
+import SimplePage from "./components/pages/SimplePage";
 
 function App() {
   return (
